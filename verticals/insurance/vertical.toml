@@ -1,0 +1,45 @@
+# The insurance vertical: carriers, third-party administrators, dental and health payers, and MGAs.
+#
+# Built for claims adjusters, claims supervisors, coordination-of-benefits and subrogation
+# specialists, SIU and OFAC sanctions investigators, underwriters, and appeals teams whose day-to-day
+# work is governed by policy contracts, benefit plan documents, fee schedules, and statutory unfair
+# claims settlement clocks.
+
+[vertical]
+slug = "insurance"
+name = "headcount-insurance"
+title = "Insurance"
+tagline = "An agent organization for insurance carriers, TPAs, dental and health payers, and compliance teams — the full cross-industry core, plus claims adjusting, coordination of benefits, underwriting, and sanctions investigation."
+description = "An agent organization for property and casualty carriers, dental and health payers, third-party administrators, managing general agents, and insurance compliance teams. Each department installs independently so only the relevant function loads."
+keywords = ["insurance", "claims", "underwriting", "tpa", "payer", "subrogation", "ofac", "siu"]
+rationale = """
+Insurance operations look like document processing until a regulator or a policyholder's counsel
+reads the claim file. The cross-industry core covers how a company runs its technology, finance,
+security, and general operations, and says nothing about the decisions that determine whether a
+carrier or third-party administrator is solvent and lawful: whether a loss falls inside the insuring
+agreement before an exclusion is cited, which plan pays first under coordination-of-benefits rules,
+whether a sanctions alert is a true match on the OFAC SDN list, whether case reserves reflect the
+exposure in the file, and whether an adverse determination notice cites the exact policy provision
+and appeal rights required by state statute or ERISA.
+
+Filing those capabilities under generic operations or customer support would misroute the work and
+give generic advice where statutory clocks, authority limits, and regulatory audit trails govern.
+This vertical adds an `insurance-claims` department for practitioner workflows — claims adjusting,
+supervisory quality assurance, coordination of benefits and subrogation, SIU fraud and OFAC
+sanctions investigation, underwriting risk selection, and policyholder or provider appeals — and
+extends the core operations and regulatory compliance skills with payer and carrier obligations.
+"""
+
+[repo]
+url = "https://github.com/Loresse-Network-Technologies/headcount-insurance"
+upstream = "https://github.com/Loresse-Network-Technologies/headcount"
+
+[[department]]
+name = "insurance-claims"
+title = "Insurance & Claims"
+description = "Claims adjusting, coverage and coordination-of-benefits adjudication, supervisor quality review, underwriting risk selection, SIU and OFAC sanctions investigation, and policyholder appeals."
+keywords = ["claims", "adjuster", "insurance", "underwriting", "cob", "subrogation", "ofac", "siu"]
+category = "insurance"
+
+[emit]
+exclude_departments = []
