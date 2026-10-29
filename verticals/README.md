@@ -95,3 +95,46 @@ build: emit without `--verify`, then push `dist/headcount-<slug>/` to its own re
 its own README, its own `CONTRIBUTING.md` pointing contributions back here, and the checks that
 still mean something downstream — the three that verify generated documents stay upstream, where the
 generators that write them live.
+
+## Selecting functional hats as a practitioner
+
+Every department in the core is headed by a chief role, and the org chart reads from the top down.
+Most people using these skills do not carry a chief title — they are claims adjusters, underwriters,
+investigators, software engineers, systems administrators, data analysts, project managers, or
+operations specialists doing the work of a function rather than running the whole department.
+
+You do not need an executive title to use a department, and a practitioner should rarely load the
+chief skill first. Each department is a bundle of specialist hats. Install only the two or three
+departments whose specialist skills match your weekly work, and invoke the practitioner skill that
+owns the decision in front of you:
+
+| If your role is… | Install | Primary practitioner hats to reach for |
+|---|---|---|
+| **Claims Adjuster / Examiner** | `insurance-claims`, `operations`, `customer-experience` | `insurance-claims:claims-adjusting`, `insurance-claims:coordination-of-benefits-and-subrogation`, `customer-experience:escalation-management` |
+| **Claims Supervisor / QA Auditor** | `insurance-claims`, `operations`, `legal-risk` | `insurance-claims:claims-supervision-and-qa`, `operations:quality-management`, `operations:service-level-management`, `operations:process-design` |
+| **COB & Subrogation Specialist** | `insurance-claims`, `legal-risk`, `finance` | `insurance-claims:coordination-of-benefits-and-subrogation`, `legal-risk:disputes-and-legal-holds`, `finance:internal-controls-and-audit` |
+| **SIU Investigator / OFAC Sanctions Analyst** | `insurance-claims`, `legal-risk`, `security` | `insurance-claims:siu-and-sanctions-investigation`, `legal-risk:regulatory-compliance`, `legal-risk:disputes-and-legal-holds`, `security:incident-response` |
+| **Underwriter / Risk Analyst** | `insurance-claims`, `finance`, `data-analytics` | `insurance-claims:underwriting-and-risk-selection`, `finance:financial-modeling`, `finance:unit-economics`, `data-analytics:quantitative-analysis` |
+| **Policyholder & Provider Appeals Specialist** | `insurance-claims`, `legal-risk`, `customer-experience` | `insurance-claims:policyholder-and-provider-appeals`, `legal-risk:regulatory-compliance`, `customer-experience:escalation-management` |
+| **Software / Platform Engineer** | `technology`, `security`, `data-analytics` | `technology:solution-architecture`, `technology:api-design`, `technology:test-driven-development`, `technology:systematic-debugging`, `security:security-architecture-review` |
+| **IT Systems / Cloud / Service Desk Engineer** | `it-operations`, `security` | `it-operations:systems-administration`, `it-operations:cloud-administration`, `it-operations:service-desk`, `security:access-and-identity` |
+| **Data Engineer / BI & Analytics Practitioner** | `data-analytics`, `technology`, `finance` | `data-analytics:data-engineering`, `data-analytics:data-modeling`, `data-analytics:business-intelligence`, `data-analytics:quantitative-analysis` |
+| **Product Manager / UX Designer** | `product`, `customer-experience`, `demand-generation` | `product:product-discovery`, `product:product-requirements`, `product:interface-craft`, `customer-experience:voice-of-customer` |
+| **Project / Program / Operations Manager** | `pmo`, `operations` | `pmo:project-delivery`, `pmo:schedule-development-and-analysis`, `operations:process-design`, `operations:capacity-and-demand-planning` |
+
+Three rules keep hat selection sharp for individual contributors and team leads:
+
+1. **Start with the specialist skill, not the chief skill.** `technology:systematic-debugging` or
+   `insurance-claims:claims-adjusting` goes straight to the craft and its guardrails; the chief
+   skills (`technology:chief-technology-officer`, `operations:chief-operating-officer`) are for
+   cross-team trade-offs, staffing, and portfolio allocation.
+2. **Switch hats when the phase of work changes.** A single practitioner commonly wears three hats
+   in one afternoon — an adjuster verifying coverage under `insurance-claims:claims-adjusting`,
+   calculating secondary payable amounts under `insurance-claims:coordination-of-benefits-and-subrogation`,
+   and routing a sanctions hit under `insurance-claims:siu-and-sanctions-investigation`; or an
+   engineer scoping a change with `technology:solution-exploration`, building it with
+   `technology:test-driven-development`, and checking the auth boundary with
+   `security:security-architecture-review`.
+3. **Keep `security` and `legal-risk` installed as reviewer hats.** Even when neither is your job
+   title, their skills (`security:threat-modeling`, `legal-risk:privacy-and-data-protection`,
+   `legal-risk:regulatory-compliance`) catch the obligations that cannot be traded away at the desk.
